@@ -1,0 +1,673 @@
+/* style.css */
+body {
+      margin: 0;
+      font-family: Outfit;
+      background: url("images/background.png");
+      background-size: cover; 
+      font-weight: 300;
+      line-height: 1.6;
+      color: #424242;
+    }
+    /* Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 253, 248, 0.2); 
+    z-index: -1; 
+    }
+    
+    header {
+      background: #3dcbdb;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-family: Funnel Sans;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-text {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .logo-img {
+      height: 40px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.9rem;
+    }
+
+    a {
+      color: inherit; 
+      text-decoration: none;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Funnel Sans;
+        color: #515151;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .hero {
+        background: #ffae4aef;
+        background-image: url("images/overlay.png"); /* your image */
+        background-repeat: repeat;
+        background-position: center;;
+        background-size: contain; /* or cover depending on effect */
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .heroWord {
+      background: #f2a0489d;
+      width: 60%;
+      margin: auto;
+      color: white;
+      padding: 1rem 1rem;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+
+    .hero h1 {
+      margin: 0 0 1rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+    #word {
+        color: #3dcbdb;
+        font-weight: 700;
+    }
+    #word1 {
+        color: #24a3b1;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .missions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .mission {
+        background: #ffeacfef;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service {
+      background: #3dcbdb;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .section-home{
+        color:#3dcbdb
+    }
+    footer {
+      background: #dfae6f;;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    li a:hover {
+        color: #ffcc85;
+    }
+
+/* Assistants Page Styles */
+.va-directory {
+  padding: 2rem;
+  text-align: center;
+}
+
+.va-directory h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.va-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.va-card {
+  background-color: #ffeacfef;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.va-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.va-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.va-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.va-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.va-card a:hover {
+  background-color: #2980b9;
+}
+
+/* Our Story Page Styles */
+/* Hero */
+.story-hero {
+  background-color: rgba(197, 175, 149, 0.58) ;
+  background:#f09f36 url("images/overlay.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 1rem 1rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+}
+
+.story-hero::before {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(218, 117, 50, 0.58);
+}
+
+.story-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro & Origins sections */
+.story-intro,
+.story-origins {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.story-intro .text,
+.story-origins .text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.story-intro img,
+.story-origins img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Alternate layout for variety */
+.story-origins {
+  background: #f9f9f9;
+}
+
+/* Values section */
+.story-values {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.value h3 {
+  margin-bottom: 0.5rem;
+  color: #3498db;
+}
+
+/* Muse Hub Page Styles */
+
+/* Hero section */
+.coworking-hero {
+    background:#f09f36 url("images/overlay.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.coworking-hero::before {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(218, 117, 50, 0.58) ;
+}
+
+.coworking-hero .container {
+  position: relative; 
+  z-index: 1;
+}
+.container-hub {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #3dcbdb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #9fb929;
+}
+
+.hubtitle {
+    color:#d3560dd0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/* Muse Hub Details Layout */
+.muse-hub {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.muse-hub .column {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.muse-hub h2 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.muse-hub p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.muse-hub ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+/* Gallery */
+.coworking-gallery {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Amenities */
+.coworking-amenities {
+  padding: 3rem 1rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.coworking-amenities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coworking-amenities li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Contact section */
+.coworking-contact {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Hero Section */
+.contact-hero {
+  background: url("images/overlay.png");
+   background-repeat: repeat;
+   background-position: center;
+   background-size: contain; 
+   color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  color: white;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #007dc6bf
+}
+
+.contact-hero h1,
+.contact-hero p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Contact Layout */
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info h2 {
+  margin-top: 1rem;
+  color: #3498db;
+}
+
+.contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Profile Container */
+.assistant-profile {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Section */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffddb4;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+  font-family: Outfit;
+}
+
+.profile-info .role {
+  font-weight: 500;
+  color: #666;
+}
+
+.profile-info .location {
+  font-size: 0.95rem;
+  color: #888;
+  font-family: Outfit;
+}
+
+/* Bio + Services */
+.profile-bio,
+.profile-services {
+  margin-bottom: 2rem;
+  font-family: Outfit;
+}
+
+.profile-bio h2,
+.profile-services h2 {
+  color: #3dcbdb; /* cute coral-pink accent */
+  margin-bottom: 0.8rem;
+
+}
+
+.profile-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-services li {
+  margin-bottom: 0.5rem;
+  background: #fff3e9;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
+
+.profile-cv {
+  text-align: center;
+}
+
+.fee-structure {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #444;
+}
+
+/* Contact Button */
+.profile-contact {
+  text-align: center;
+  margin-top: 2rem;
+} 
+.contact-btn {
+  display: inline-block;
+  background: #ff9a6b;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+      background: #3dcbdb;
+}
+
+/* Chat */
+
+/* Chat toggle button */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3dcbdb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Chat box */
+#chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none; 
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.chat-header {
+  background: #3dcbdb;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-messages {
+  padding: 10px;
+  height: 180px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+
+.chat-input button {
+  background: #3dcbdb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
