@@ -132,6 +132,7 @@ body::before {
       padding: 3rem 1rem;
       text-align: center;
     }
+
     .heroWord {
       background: #f2a0489d;
       width: 60%;
@@ -260,28 +261,16 @@ body::before {
 /* Our Story Page Styles */
 /* Hero */
 .story-hero {
-  background-color: rgba(197, 175, 149, 0.58) ;
-  background:#f09f36 url("images/overlay.png");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
-  padding: 1rem 1rem;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  position: relative;
-}
-
-.story-hero::before {
-  content: "";
-  position: absolute;
-  top:0; left:0; right:0; bottom:0;
-  background: rgba(218, 117, 50, 0.58);
-}
-
-.story-hero .container {
-  position: relative;
-  z-index: 1;
-}
+   background: #ffae4aef;
+        background-image: url("images/overlay.png"); /* your image */
+        background-repeat: repeat;
+        background-position: center;;
+        background-size: contain; /* or cover depending on effect */
+      color: white;
+      padding: 1rem 1rem;
+      text-align: center;
+    }
+  
 
 /* Intro & Origins sections */
 .story-intro,
@@ -339,27 +328,16 @@ body::before {
 
 /* Hero section */
 .coworking-hero {
-    background:#f09f36 url("images/overlay.png");
+ background: #ffae4aef;
+  background-image: url("images/overlay.png"); /* your image */
   background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center;;
+  background-size: contain; /* or cover depending on effect */
   color: white;
-  text-align: center;
   padding: 1rem 1rem;
-  position: relative;
-}
-
-.coworking-hero::before {
-  content: "";
-  position: absolute;
-  top:0; left:0; right:0; bottom:0;
-  background: rgba(218, 117, 50, 0.58) ;
-}
-
-.coworking-hero .container {
-  position: relative; 
-  z-index: 1;
-}
+  text-align: center;
+    }
+    
 .container-hub {
   max-width: 800px;
   margin: 0 auto;
@@ -460,30 +438,16 @@ body::before {
 
 /* Hero Section */
 .contact-hero {
-  background: url("images/overlay.png");
-   background-repeat: repeat;
-   background-position: center;
-   background-size: contain; 
-   color: white;
-  text-align: center;
-  padding: 1rem 1rem;
+  background: #cf7404ef;
+  background-image: url("images/overlay1.png"); /* your image */
+  background-repeat: repeat;
+  background-position: center;;
+  background-size: contain; /* or cover depending on effect */
   color: white;
-  position: relative;
-}
-
-.contact-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #007dc6bf
-}
-
-.contact-hero h1,
-.contact-hero p {
-  position: relative;
-  z-index: 1;
-}
-
+  padding: 1rem 1rem;
+  text-align: center;
+    }
+    
 /* Contact Layout */
 .contact-section {
   display: grid;
