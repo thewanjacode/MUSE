@@ -26,3 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Style Google Translate dropdown once it loads
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new MutationObserver(() => {
+    const googleDropdown = document.querySelector("#google_translate_element select");
+    if (googleDropdown) {
+      googleDropdown.style.padding = "6px 10px";
+      googleDropdown.style.borderRadius = "6px";
+      googleDropdown.style.border = "1px solid #3dcbdb";
+      googleDropdown.style.backgroundColor = "#fff";
+      googleDropdown.style.fontFamily = "Outfit, sans-serif";
+      googleDropdown.style.fontSize = "14px";
+      googleDropdown.style.color = "#333";
+      observer.disconnect(); // stop watching once styled
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});

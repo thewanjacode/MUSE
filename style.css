@@ -72,6 +72,41 @@ body::before {
       text-decoration: none;
     }
 
+    
+/* Google Translate container */
+#google_translate_element {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center; /* or flex-end if in header top-right */
+}
+
+/* Dropdown itself */
+#google_translate_element select {
+  background: #ffffff;
+  border: 1px solid #3dcbdb;
+  border-radius: 10px;
+  padding: 6px 7px;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  color: #424242;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hide "Powered by Google Translate" attribution */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+/* Optional: reset container font size so it doesn’t collapse */
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
     /* Hamburger button */
 .menu-toggle {
   display: none; /* hidden on desktop */
