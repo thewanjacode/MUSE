@@ -313,15 +313,27 @@ body::before {
   
 
 /* Intro & Origins sections */
+
+.container2 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .story-intro,
 .story-origins {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   align-items: center;
   padding: 3rem 1rem;
+  grid-template-columns: 1fr; /* default: 1 column */
 }
 
+@media (min-width: 768px) {
+  .story-intro,
+  .story-origins {
+    grid-template-columns: 1fr 1fr; /* exactly 2 columns on desktop */
+  }
+}
 .story-intro .text,
 .story-origins .text {
   font-size: 1.1rem;
